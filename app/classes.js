@@ -1,3 +1,16 @@
+class Department{
+    constructor(name){
+        this.name = name
+    }
+}
+class Role {
+    constructor(title, salary, departmentName){
+        this.title = title
+        this.salary = salary
+        this.departmentName = departmentName
+    }
+}
+
 class Employee {
     constructor(id, firstName, lastName, manager, title, salary, departmentName){
         this.id = id
@@ -14,4 +27,4 @@ class Employee {
     }
 }
 
-module.exports = Employee
+module.exports = {Department, Role, Employee}
