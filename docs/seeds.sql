@@ -1,8 +1,9 @@
 USE employee_trackerDB;
 
-INSERT INTO departments VALUES (1, "FirstDepartment");
-INSERT INTO roles VALUES(1, "FirstRole", 2.0, 1);
-INSERT INTO roles VALUES (2, "SecondRole", 2.0, 1);
-INSERT INTO employees VALUES (1, "First", "Last", 1, 1);
+INSERT INTO departments (name) VALUES ("FirstDepartment");
+INSERT INTO departments (name) VALUES ("SecondDepartment");
+INSERT INTO roles (title, salary, department_id) VALUES("FirstRole", 2.0, 1);
+INSERT INTO roles (title, salary, department_id) VALUES ("SecondRole", 2.0, 1);
+INSERT INTO employees (first_name, last_name, role_id) VALUES ("First", "Last", 1);
 
 
