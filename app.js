@@ -3,7 +3,7 @@ const table = require('console.table')
 
 const { Department, Role, Employee } = require('./app/classes')
 // module to connect to database
-const db = require('./app/connection')('employee_trackerDB', 'root')
+const db = require('./app/connection')('employee_trackerDB', 'Password4SQL')
 
 // database actions
 function getAll(table) {
